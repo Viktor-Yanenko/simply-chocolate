@@ -48,14 +48,9 @@ img {
 
 /* Header */
 
-.header {
-    /* padding: 20px 20px 14px; */
-}
-
 .header-cont {
     padding: 0;
     display: flex;
-    /* justify-content: space-between; */
     gap: 138px;
     align-items: center;
     padding: 20px 20px 14px;
@@ -252,7 +247,7 @@ img {
     margin-right: 14px;
     margin-bottom: 32px;
     cursor: pointer;
-    transition: all 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buy-btn:hover,
@@ -294,13 +289,19 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.scroll-icon {
-    fill: #fd9222;
+.scroll-icon-circle{
     border-radius: 100%;
     background-color: #ffffff;
     width: 28px;
     height: 28px;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-icon {
+    fill: #fd9222;    
 }
 
 .scroll-down:hover .hero-scrl-txt,
@@ -308,9 +309,68 @@ img {
     color:#fd9222;
 }
 
+.scroll-down:hover .scroll-icon-circle,
+.scroll-down:focus .scroll-icon-circle {
+    background-color: #fd9222;
+    transform: rotate(-90deg);
+}
+
 .scroll-down:hover .scroll-icon,
 .scroll-down:focus .scroll-icon {
     fill: #ffffff;
-    background-color: #fd9222;
-    transform: rotate(-90deg);
+}
+
+/* Benefits */
+
+.benefits {
+    background-color: #1E1823;    
+    width: 375px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.benefits-cont{
+    padding: 20px;
+}
+
+.benefits-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefits-item {
+    padding-right: 28px;
+}
+
+.benefits-icon-circle {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.benefits-icon {
+    fill: #fd9222;
+    
+}
+
+.benefits-header {
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.benefits-txt {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);;
 }
