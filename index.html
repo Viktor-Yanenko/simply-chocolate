@@ -41,10 +41,10 @@
               <a href="./index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">How it's made?</a>
+              <a href="#how-its-made" class="nav-link">How it's made?</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Chocolate is loved</a>
+              <a href="#reviews" class="nav-link">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
@@ -78,10 +78,10 @@
             <a href="./index.html" class="mob-menu-nav-link current">Home</a>
           </li>
           <li class="mob-menu-nav-item">
-            <a href="" class="mob-menu-nav-link">How it's made?</a>
+            <a href="#how-its-made" class="mob-menu-nav-link">How it's made?</a>
           </li>
           <li class="mob-menu-nav-item">
-            <a href="" class="mob-menu-nav-link">Chocolate is loved</a>
+            <a href="#reviews" class="mob-menu-nav-link">Chocolate is loved</a>
           </li>
         </ul>
         <ul class="mob-menu-socials-list">
@@ -112,8 +112,9 @@
             of pure delight!
           </h1>
           <button type="button" class="buy-btn">Buy now</button>
-          <a href="" class="hero-btn-link">How it's made</a>
-          <div class="scroll-down">
+          <a href="#how-its-made" class="hero-btn-link">How it's made</a>
+          <a href="#footer" class="scroll-down-link">
+            <div class="scroll-down">
             <p class="hero-scrl-txt">scroll down</p>
             <div class="scroll-icon-circle">
               <svg width="16" height="16" class="scroll-icon">
@@ -121,6 +122,7 @@
               </svg>
             </div>
           </div>
+          </a>
         </div>
       </section>
       <!------ Benefits ------>
@@ -385,24 +387,57 @@
       <section id="reviews" class="section reviews">
         <div class="container review-cont">
           <h2 class="reviews-title"><span class="orange">chocolate </span>is loved</h2>
-          <div class="reviews-info">
-            <picture>
-                    <source
-                      srcset="
-                        ./images/reviews/victoria@1x.webp 1x,
-                        ./images/reviews/victoria@1x.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img
-                      src="./images/reviews/victoria@1x.webp"
-                      alt="Victoria Dobrzhanska"
-                      class="reviews-img"
-                    />
-            </picture>
-            <p class="reviews-name">Victoria Dobrzhanska</p>
-            <p class="reviews-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+          
+          <div class="slider">
+            <ul class="slides">
+              <li class="slide">
+                <div class="reviews-info">
+                  <picture>
+                    <source srcset="
+                                        ./images/reviews/victoria@1x.webp 1x,
+                                        ./images/reviews/victoria@1x.webp 2x
+                                      " media="(max-width: 767px)" />
+                    <img src="./images/reviews/victoria@1x.webp" alt="Victoria Dobrzhanska" class="reviews-img" />
+                  </picture>
+                  <p class="reviews-name">Victoria Dobrzhanska</p>
+                  <p class="reviews-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer
+                    chocolate.</p>
+                </div>
+              </li>
+              <li class="slide hidden-mob">
+                <div class="reviews-info">
+                  <picture>
+                    <source srcset="
+                                        ./images/reviews/nazar@1x.webp 1x,
+                                        ./images/reviews/nazar@1x.webp 2x
+                                      " media="(max-width: 767px)" />
+                    <img src="./images/reviews/nazar@1x.webp" alt="Nazar Babenko" class="reviews-img" />
+                  </picture>
+                  <p class="reviews-name">Nazar Babenko</p>
+                  <p class="reviews-text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.</p>
+                </div>
+              </li>
+              <li class="slide hidden-mob">
+                <div class="reviews-info">
+                  <picture>
+                    <source srcset="
+                                        ./images/reviews/olena@1x.webp 1x,
+                                        ./images/reviews/olena@1x.webp 2x
+                                      " media="(max-width: 767px)" />
+                    <img src="./images/reviews/olena@1x.webp" alt="Olena Kampusch" class="reviews-img" />
+                  </picture>
+                  <p class="reviews-name">Olena Kampusch</p>
+                  <p class="reviews-text">Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.</p>
+                </div>
+              </li>
+            </ul>
           </div>
+          
+          
+          
+          
           <div class="reviews-banner">
           <svg class="reviews-rect" width="29" heigth="13">
             <use href="./images/icons.svg#icon-rect"></use>
@@ -419,7 +454,7 @@
       </section>
     </main>
     <!------ Footer ------>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container foot">
         <div class="footer-upper">
         <h2 class="footer-title"><span class="orange">Chocolate</span> a delicious cure for a bad day</h2>
