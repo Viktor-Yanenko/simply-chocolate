@@ -60,15 +60,15 @@
             </svg>
           </li>
         </ul>
-        <button type="button" class="open-mob-menu" data-menu-open>
+        <button type="button" class="open-mob-menu">
           <svg class="burger-menu-icon" width="24" height="16">
             <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
         </button>
       </div>
       <!------ Mobile menu ------>
-      <div class="mobile-menu" data-menu>
-        <button type="button" class="mob-menu-close-btn" data-menu-close>
+      <div class="mobile-menu">
+        <button type="button" class="mob-menu-close-btn">
           <svg class="mob-menu-close-icon" width="28" height="28">
             <use href="./images/icons.svg#icon-close-mob-menu"></use>
           </svg>
@@ -115,13 +115,13 @@
           <a href="#how-its-made" class="hero-btn-link">How it's made</a>
           <a href="#footer" class="scroll-down-link">
             <div class="scroll-down">
-            <p class="hero-scrl-txt">scroll down</p>
-            <div class="scroll-icon-circle">
-              <svg width="16" height="16" class="scroll-icon">
-                <use href="./images/icons.svg#icon-down-arrow"></use>
-              </svg>
+              <p class="hero-scrl-txt">scroll down</p>
+              <div class="scroll-icon-circle">
+                <svg width="16" height="16" class="scroll-icon">
+                  <use href="./images/icons.svg#icon-down-arrow"></use>
+                </svg>
+              </div>
             </div>
-          </div>
           </a>
         </div>
       </section>
@@ -335,50 +335,63 @@
       <!------ HOW IT'S MADE ------>
       <section id="how-its-made" class="section how-its-made">
         <div class="container how-made-cont">
-          <h2 class="how-made-title">how it's <span class="orange">made?</span></h2>
+          <h2 class="how-made-title">
+            how it's <span class="orange">made?</span>
+          </h2>
           <picture>
-                  <source
-                    srcset="
-                      ./images/how-its-made/video@1x.webp 1x,
-                      ./images/how-its-made/video@2x.webp 2x
-                    "
-                    media="(max-width: 767px)"
-                  />
-                  <img
-                    src="./images/how-its-made/video@1x.webp"
-                    alt="Video how we made chocolate"
-                    class="how-made-img"
-                  />
+            <source
+              srcset="
+                ./images/how-its-made/video@1x.webp 1x,
+                ./images/how-its-made/video@2x.webp 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/how-its-made/video@1x.webp"
+              alt="Video how we made chocolate"
+              class="how-made-img"
+            />
           </picture>
           <div class="how-made-text">
-            <h3>Try our chocolates today and discover the perfect balance of flavor</h3>
+            <h3>
+              Try our chocolates today and discover the perfect balance of
+              flavor
+            </h3>
             <ul class="how-made-list">
               <li class="how-made-item">
                 <svg class="how-made-list-marker" width="8" height="8">
                   <use href="./images/icons.svg#icon-marker"></use>
                 </svg>
-                Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
+                Heat the milk in a saucepan without bringing it to a boil. Add
+                sugar and cocoa powder.
+              </li>
               <li class="how-made-item">
                 <svg class="how-made-list-marker" width="8" height="8">
                   <use href="./images/icons.svg#icon-marker"></use>
                 </svg>
-                At the same time, prepare a water bath. Melt the butter on it.</li>
+                At the same time, prepare a water bath. Melt the butter on it.
+              </li>
               <li class="how-made-item">
                 <svg class="how-made-list-marker" width="8" height="8">
                   <use href="./images/icons.svg#icon-marker"></use>
                 </svg>
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes
-              uniform and silky.</li>
+                "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                with a silicone spatula so that the mass becomes uniform and
+                silky.
+              </li>
               <li class="how-made-item">
                 <svg class="how-made-list-marker" width="8" height="8">
                   <use href="./images/icons.svg#icon-marker"></use>
                 </svg>
-                Heat the mixture over low heat, letting it barely boil.</li>
+                Heat the mixture over low heat, letting it barely boil.
+              </li>
               <li class="how-made-item">
                 <svg class="how-made-list-marker" width="8" height="8">
                   <use href="./images/icons.svg#icon-marker"></use>
                 </svg>
-                Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
+                Pour the chocolate into special containers (can be replaced with
+                ice molds). Allow to cool and harden.
+              </li>
             </ul>
           </div>
         </div>
@@ -386,68 +399,86 @@
       <!------ Reviews  ------>
       <section id="reviews" class="section reviews">
         <div class="container review-cont">
-          <h2 class="reviews-title"><span class="orange">chocolate </span>is loved</h2>
-          
-          <div class="slider">
-            <ul class="slides">
-              <li class="slide">
-                <div class="reviews-info">
-                  <picture>
-                    <source srcset="
-                                        ./images/reviews/victoria@1x.webp 1x,
-                                        ./images/reviews/victoria@1x.webp 2x
-                                      " media="(max-width: 767px)" />
-                    <img src="./images/reviews/victoria@1x.webp" alt="Victoria Dobrzhanska" class="reviews-img" />
-                  </picture>
-                  <p class="reviews-name">Victoria Dobrzhanska</p>
-                  <p class="reviews-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer
-                    chocolate.</p>
-                </div>
-              </li>
-              <li class="slide hidden-mob">
-                <div class="reviews-info">
-                  <picture>
-                    <source srcset="
-                                        ./images/reviews/nazar@1x.webp 1x,
-                                        ./images/reviews/nazar@1x.webp 2x
-                                      " media="(max-width: 767px)" />
-                    <img src="./images/reviews/nazar@1x.webp" alt="Nazar Babenko" class="reviews-img" />
-                  </picture>
-                  <p class="reviews-name">Nazar Babenko</p>
-                  <p class="reviews-text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the
-                  chocolate is good.</p>
-                </div>
-              </li>
-              <li class="slide hidden-mob">
-                <div class="reviews-info">
-                  <picture>
-                    <source srcset="
-                                        ./images/reviews/olena@1x.webp 1x,
-                                        ./images/reviews/olena@1x.webp 2x
-                                      " media="(max-width: 767px)" />
-                    <img src="./images/reviews/olena@1x.webp" alt="Olena Kampusch" class="reviews-img" />
-                  </picture>
-                  <p class="reviews-name">Olena Kampusch</p>
-                  <p class="reviews-text">Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft
-                  but crunchy.</p>
-                </div>
-              </li>
-            </ul>
+          <h2 class="reviews-title">
+            <span class="orange">chocolate </span>is loved
+          </h2>
+          <div class="reviews-info">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/victoria@1x.webp 1x,
+                  ./images/reviews/victoria@1x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/reviews/victoria@1x.webp"
+                alt="Victoria Dobrzhanska"
+                class="reviews-img"
+              />
+            </picture>
+            <p class="reviews-name">Victoria Dobrzhanska</p>
+            <p class="reviews-text">
+              I love this chocolate bar. Perfect combination of light crispy
+              wafer, covered in a thin layer chocolate.
+            </p>
           </div>
-          
-          
-          
-          
+
+          <!-- <div class="reviews-info">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/nazar@1x.webp 1x,
+                  ./images/reviews/nazar@1x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/reviews/nazar@1x.webp"
+                alt="Nazar Babenko"
+                class="reviews-img"
+              />
+            </picture>
+            <p class="reviews-name">Nazar Babenko</p>
+            <p class="reviews-text">
+              This chocolate confection is a delight! A delight! The wafer is
+              light and crisp, the hazelnut cream is smooth, and the chocolate
+              is good.
+            </p>
+          </div>
+          <div class="reviews-info">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/olena@1x.webp 1x,
+                  ./images/reviews/olena@1x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/reviews/olena@1x.webp"
+                alt="Olena Kampusch"
+                class="reviews-img"
+              />
+            </picture>
+            <p class="reviews-name">Olena Kampusch</p>
+            <p class="reviews-text">
+              Chocolate is a family favourite treat. Love the delicious smooth
+              chocolate and the creaminess inside. The wafer is soft but
+              crunchy.
+            </p>
+          </div> -->
+
           <div class="reviews-banner">
-          <svg class="reviews-rect" width="29" heigth="13">
-            <use href="./images/icons.svg#icon-rect"></use>
-          </svg>
-          <svg class="reviews-dot" width="14" heigth="13">
-            <use href="./images/icons.svg#icon-ellipse"></use>
-          </svg>
-          <svg class="reviews-dot" width="14" heigth="13">
-            <use href="./images/icons.svg#icon-ellipse"></use>
-          </svg>
+            <svg class="reviews-rect" width="29" heigth="13">
+              <use href="./images/icons.svg#icon-rect"></use>
+            </svg>
+            <svg class="reviews-dot" width="14" heigth="13">
+              <use href="./images/icons.svg#icon-ellipse"></use>
+            </svg>
+            <svg class="reviews-dot" width="14" heigth="13">
+              <use href="./images/icons.svg#icon-ellipse"></use>
+            </svg>
           </div>
           <button type="button" class="reviews-button">Leave a review</button>
         </div>
@@ -457,32 +488,152 @@
     <footer class="footer" id="footer">
       <div class="container foot">
         <div class="footer-upper">
-        <h2 class="footer-title"><span class="orange">Chocolate</span> a delicious cure for a bad day</h2>
-        <address class="footer-address">
-          <p class="footer-contact-us">Contact us</p>
-          <ul class="footer-contacts-list">
-            <li class="footer-contacts-item"><a href="tel:+380684439426" class="footer-contacts-link">+380 (68) 443-94-26</a></li>
-            <li class="footer-contacts-item"><a href="mailto:simplychoc@gmail.com" class="footer-contacts-link">simplychoc@gmail.com</a></li>
-          </ul>          
-        </address>
+          <h2 class="footer-title">
+            <span class="orange">Chocolate</span> a delicious cure for a bad day
+          </h2>
+          <address class="footer-address">
+            <p class="footer-contact-us">Contact us</p>
+            <ul class="footer-contacts-list">
+              <li class="footer-contacts-item">
+                <a href="tel:+380684439426" class="footer-contacts-link"
+                  >+380 (68) 443-94-26</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  href="mailto:simplychoc@gmail.com"
+                  class="footer-contacts-link"
+                  >simplychoc@gmail.com</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
         <div class="footer-lower">
           <nav class="footer-nav">
             <ul class="footer-nav-list">
-              <li class="footer-nav-item"><a href="./index.html" class="footer-nav-link">Home</a></li>
-              <li class="footer-nav-item"><a href="#how-its-made" class="footer-nav-link">How it's made</a></li>
-              <li class="footer-nav-item"><a href="#reviews" class="footer-nav-link">Chocolate is loved</a></li>
+              <li class="footer-nav-item">
+                <a href="./index.html" class="footer-nav-link">Home</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#how-its-made" class="footer-nav-link"
+                  >How it's made</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a href="#reviews" class="footer-nav-link"
+                  >Chocolate is loved</a
+                >
+              </li>
             </ul>
           </nav>
           <form class="footer-form">
             <label class="footer-inp">
-              <input type="email" name="subs-email" placeholder="Enter your email" class="subs-email">
+              <input
+                type="email"
+                name="subs-email"
+                placeholder="Enter your email"
+                class="subs-email"
+              />
             </label>
             <button type="submit" class="subs-button">Subscribe</button>
           </form>
         </div>
       </div>
     </footer>
-    <script src="./js/menu.js"></script>
+    <!----- Modal ----->
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close-btn">
+          <svg class="modal-close-btn-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">
+          leave a review <br />about <span class="orange">our chocolate</span>
+        </h2>
+        <form class="modal-form">
+          <div class="modal-label-input">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="modal-input-cont">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="modal-field"
+              />
+              <svg class="modal-icon" width="17" height="17">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-label-input">
+            <label for="modal-email" class="modal-label">Email</label>
+            <div class="modal-input-cont">
+              <input
+                type="email"
+                name="email"
+                id="modal-email"
+                class="modal-field"
+              />
+              <svg class="modal-icon" width="17" height="17">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-label-input">
+            <label for="modal-phone" class="modal-label">Phone number</label>
+            <div class="modal-input-cont">
+              <input
+                type="tel"
+                name="phone"
+                id="modal-phone"
+                class="modal-field"
+              />
+              <svg class="modal-icon" width="17" height="17">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-label-textarea">
+            <label for="user-comment" class="modal-label">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+              class="modal-txt"
+            ></textarea>
+          </div>
+
+          <div class="modal-checkbox-field">
+            <input
+              type="checkbox"
+              class="modal-checkbox visually-hidden"
+              name="user-privacy"
+              id="user-privacy"
+              required
+              value="true"
+            />
+            <label class="modal-label-chkbox" for="user-privacy">
+              <span class="check"
+                ><svg width="10" height="10">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <span
+                >I accept the terms and conditions of the
+                <a href="#" class="modal-link orange">Privacy Policy</a></span
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/sripts.js"></script>
   </body>
 </html>
