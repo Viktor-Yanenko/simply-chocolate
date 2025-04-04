@@ -539,9 +539,11 @@ img {
 
 /* HOW IT'S MADE */
 
-.how-its-made {}
-
-.how-made-cont {}
+.how-its-made {
+    width: 375px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
 
 .how-made-title {
     font-weight: 600;
@@ -568,7 +570,7 @@ img {
     padding: 20px 14px;
     background-color: #fff;
     border-radius: 15px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 
 .how-made-list {
@@ -597,6 +599,12 @@ img {
 }
 
 /* REVIEWS */
+
+.reviews{
+    width: 375px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
 
 .reviews-title{
     font-weight: 600;
@@ -675,7 +683,6 @@ img {
     background-color: transparent;
     width: 165px;
     height: 41px;
-    margin-bottom: 60px;
 
     font-weight: 600;
     font-size: 14px;
@@ -693,6 +700,11 @@ img {
 
 
 /* FOOTER */
+
+.footer{
+    width: 375px;
+    margin: 0 auto;
+}
 
 .foot{
     padding: 32px 20px;
