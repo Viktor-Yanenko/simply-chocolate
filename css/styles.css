@@ -698,6 +698,9 @@ img {
     color:#ffffff;
 }
 
+.hide-mob{
+    display: none;
+}
 
 /* FOOTER */
 
