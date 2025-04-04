@@ -921,6 +921,11 @@ img {
     background-color: transparent;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+    color: #111111;
 }
 
 .modal-field:hover,
@@ -965,6 +970,18 @@ img {
     resize: none;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+    color: #111111;
+}
+
+.modal-txt::placeholder{
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
 }
 
 .modal-txt:hover,
