@@ -86,14 +86,22 @@
         </ul>
         <ul class="mob-menu-socials-list">
           <li class="mob-menu-socials-item">
-            <a href="https://www.instagram.com/" class="mob-menu-socials-link" target="_blank">
+            <a
+              href="https://www.instagram.com/"
+              class="mob-menu-socials-link"
+              target="_blank"
+            >
               <svg class="mob-menu-socials-icon" width="22" height="22">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="mob-menu-socials-item">
-            <a href="https://twitter.com/" class="mob-menu-socials-link" target="_blank">
+            <a
+              href="https://twitter.com/"
+              class="mob-menu-socials-link"
+              target="_blank"
+            >
               <svg class="mob-menu-socials-icon" width="22" height="22">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
@@ -116,16 +124,16 @@
               <button type="button" class="buy-btn">Buy now</button>
               <a href="#how-its-made" class="hero-btn-link">How it's made</a>
             </div>
-          <a href="#footer" class="scroll-down-link">
-            <div class="scroll-down">
-              <p class="hero-scrl-txt">scroll down</p>
-              <div class="scroll-icon-circle">
-                <svg width="16" height="16" class="scroll-icon">
-                  <use href="./images/icons.svg#icon-down-arrow"></use>
-                </svg>
+            <a href="#footer" class="scroll-down-link">
+              <div class="scroll-down">
+                <p class="hero-scrl-txt">scroll down</p>
+                <div class="scroll-icon-circle">
+                  <svg width="16" height="16" class="scroll-icon">
+                    <use href="./images/icons.svg#icon-down-arrow"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
           </div>
         </div>
       </section>
@@ -202,7 +210,7 @@
                       ./images/ingredients/mobile/milk-choco-mob@1x.webp 1x,
                       ./images/ingredients/mobile/milk-choco-mob@2x.webp 2x
                     "
-                    media="(max-width: 767px)"
+                    media="(max-width: 1199px)"
                   />
                   <img
                     src="./images/ingredients/mobile/milk-choco-mob@1x.webp"
@@ -237,7 +245,7 @@
                       ./images/ingredients/mobile/milk-bottle-mob@1x.webp 1x,
                       ./images/ingredients/mobile/milk-bottle-mob@2x.webp 2x
                     "
-                    media="(max-width: 767px)"
+                    media="(max-width: 1199px)"
                   />
                   <img
                     src="./images/ingredients/mobile/milk-bottle-mob@1x.webp"
@@ -271,7 +279,7 @@
                       ./images/ingredients/mobile/nuts-mob@1x.webp 1x,
                       ./images/ingredients/mobile/nuts-mob@2x.webp 2x
                     "
-                    media="(max-width: 767px)"
+                    media="(max-width: 1199px)"
                   />
                   <img
                     src="./images/ingredients/mobile/nuts-mob@1x.webp"
@@ -305,7 +313,7 @@
                       ./images/ingredients/mobile/semi-sweet-choco-mob@1x.webp 1x,
                       ./images/ingredients/mobile/semi-sweet-choco-mob@2x.webp 2x
                     "
-                    media="(max-width: 767px)"
+                    media="(max-width: 1199px)"
                   />
                   <img
                     src="./images/ingredients/mobile/semi-sweet-choco-mob@1x.webp"
@@ -345,19 +353,33 @@
           <picture>
             <source
               srcset="
-                ./images/how-its-made/video@1x.webp 1x,
-                ./images/how-its-made/video@2x.webp 2x
+                ./images/how-its-made/desktop/video@1x.webp 1x,
+                ./images/how-its-made/desktop/video@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/how-its-made/tablet/video@1x.webp 1x,
+                ./images/how-its-made/tablet/video@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/how-its-made/mobile/video@1x.webp 1x,
+                ./images/how-its-made/mobile/video@2x.webp 2x
               "
               media="(max-width: 767px)"
             />
             <img
-              src="./images/how-its-made/video@1x.webp"
+              src="./images/how-its-made/mobile/video@1x.webp"
               alt="Video how we made chocolate"
               class="how-made-img"
             />
           </picture>
           <div class="how-made-text">
-            <h3>
+            <h3 class="how-made-text-title">
               Try our chocolates today and discover the perfect balance of
               flavor
             </h3>
@@ -406,72 +428,72 @@
           <h2 class="reviews-title">
             <span class="orange">chocolate </span>is loved
           </h2>
-          <div class="reviews-info">
-            <picture>
-              <source
-                srcset="
-                  ./images/reviews/victoria@1x.webp 1x,
-                  ./images/reviews/victoria@1x.webp 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/reviews/victoria@1x.webp"
-                alt="Victoria Dobrzhanska"
-                class="reviews-img"
-              />
-            </picture>
-            <p class="reviews-name">Victoria Dobrzhanska</p>
-            <p class="reviews-text">
-              I love this chocolate bar. Perfect combination of light crispy
-              wafer, covered in a thin layer chocolate.
-            </p>
-          </div>
+          <ul class="reviews-list">
+            <li class="reviews-info">
+              <picture>
+                <source
+                  srcset="
+                    ./images/reviews/victoria@1x.webp 1x,
+                    ./images/reviews/victoria@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/reviews/victoria@1x.webp"
+                  alt="Victoria Dobrzhanska"
+                  class="reviews-img"
+                />
+              </picture>
+              <p class="reviews-name">Victoria Dobrzhanska</p>
+              <p class="reviews-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </li>
 
-          <div class="reviews-info hide-mob">
-            <picture>
-              <source
-                srcset="
-                  ./images/reviews/nazar@1x.webp 1x,
-                  ./images/reviews/nazar@1x.webp 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/reviews/nazar@1x.webp"
-                alt="Nazar Babenko"
-                class="reviews-img"
-              />
-            </picture>
-            <p class="reviews-name">Nazar Babenko</p>
-            <p class="reviews-text">
-              This chocolate confection is a delight! A delight! The wafer is
-              light and crisp, the hazelnut cream is smooth, and the chocolate
-              is good.
-            </p>
-          </div>
-          <div class="reviews-info hide-mob hide-tab">
-            <picture>
-              <source
-                srcset="
-                  ./images/reviews/olena@1x.webp 1x,
-                  ./images/reviews/olena@1x.webp 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./images/reviews/olena@1x.webp"
-                alt="Olena Kampusch"
-                class="reviews-img"
-              />
-            </picture>
-            <p class="reviews-name">Olena Kampusch</p>
-            <p class="reviews-text">
-              Chocolate is a family favourite treat. Love the delicious smooth
-              chocolate and the creaminess inside. The wafer is soft but
-              crunchy.
-            </p>
-          </div>
+            <li class="reviews-info hide-mob">
+              <picture>
+                <source
+                  srcset="
+                    ./images/reviews/nazar@1x.webp 1x,
+                    ./images/reviews/nazar@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/reviews/nazar@1x.webp"
+                  alt="Nazar Babenko"
+                  class="reviews-img"
+                />
+              </picture>
+              <p class="reviews-name">Nazar Babenko</p>
+              <p class="reviews-text">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </li>
+
+            <li class="reviews-info hide-mob hide-tab">
+              <picture>
+                <source
+                  srcset="
+                    ./images/reviews/olena@1x.webp 1x,
+                    ./images/reviews/olena@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/reviews/olena@1x.webp"
+                  alt="Olena Kampusch"
+                  class="reviews-img"
+                />
+              </picture>
+              <p class="reviews-name">Olena Kampusch</p>
+              <p class="reviews-text">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </li>
+          </ul>
 
           <div class="reviews-banner">
             <svg class="reviews-rect" width="29" heigth="13">
@@ -493,7 +515,8 @@
       <div class="container foot">
         <div class="footer-upper">
           <h2 class="footer-title">
-            <span class="orange">Chocolate</span> a delicious cure for a bad day
+            <span class="orange">Chocolate</span> a delicious <br />
+            cure for a bad day
           </h2>
           <address class="footer-address">
             <p class="footer-contact-us">Contact us</p>
@@ -554,7 +577,7 @@
           </svg>
         </button>
         <h2 class="modal-title">
-          leave a review <br />about <span class="orange">our chocolate</span>
+          leave a review about <span class="orange">our chocolate</span>
         </h2>
         <form class="modal-form">
           <div class="modal-label-input">

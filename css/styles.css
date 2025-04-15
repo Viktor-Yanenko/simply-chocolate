@@ -143,9 +143,6 @@ img {
         align-items: center;
         justify-content: space-between;
     }
-    
-    .logo-choco{
-    }
 
     .navigation{
         display: flex;
@@ -169,6 +166,12 @@ img {
 
     .nav-link{
         color: #111111;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-link:hover,
+    .nav-link:focus{
+        color:#fd9222;
     }
 
     .socials-list{
@@ -177,12 +180,19 @@ img {
     }
 
     .socials-item{
-        height:24px;
+        height: 24px;
+        cursor: pointer;
     }
 
     .socials-icon{
         stroke: #111111;
-        fill:none;
+        fill: none;
+        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .socials-icon:hover,
+    .socials-icon:focus{
+        stroke: #fd9222;
     }
 }
 
@@ -530,6 +540,33 @@ img {
     color: rgba(255, 255, 255, 0.7);;
 }
 
+@media screen and (min-width:768px) {
+    .benefits {
+        width: 768px;
+        margin-bottom: 80px;
+    }
+
+    .benefits-cont {
+        padding: 50px 32px;
+    }
+
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .benefits-item {
+        padding: 0;
+        width: 336px;
+        padding-right: 28px;
+    }
+
+    .benefits-item:last-child {
+        padding-bottom: 35px;
+    }
+}
+
 /* Ingredients */
 
 .ingredients {
@@ -548,10 +585,6 @@ img {
     color: #000000;
     padding: 0 26px;  
     margin-bottom: 24px;  
-}
-
-.ingredients-title-taste {
-    color:#fd9222;
 }
 
 .ingredients-text {
@@ -670,6 +703,38 @@ img {
     background-color: transparent;
 }
 
+@media screen and (min-width:768px) {
+    .ingredients {
+        width: 768px;
+        margin-bottom: 80px;
+    }
+
+    .ingredients-title {
+        margin: 0 auto;
+        width: 411px;
+        font-size: 24px;
+        line-height: 1.17;
+        padding: 0;
+        margin-bottom: 28px;
+    }
+
+    .ingredients-text {
+        margin: 0 auto;
+        width: 486px;
+        margin-bottom: 50px;
+    }
+
+    .ingredients-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .ingredients-item {
+        width: calc((100% - 32px) / 2)
+    }
+}
+
 /* HOW IT'S MADE */
 
 .how-its-made {
@@ -689,10 +754,6 @@ img {
     margin-bottom: 32px;
 }
 
-.how-made-title-orng {
-    color: #fd9222;
-}
-
 .how-made-img {
     border-radius: 15px;
     width: 335px;
@@ -702,8 +763,13 @@ img {
 .how-made-text {
     padding: 20px 14px;
     background-color: #fff;
-    border-radius: 15px;
-    /* margin-bottom: 60px; */
+}
+
+.how-made-text-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 20px;
 }
 
 .how-made-list {
@@ -729,6 +795,35 @@ img {
     fill: #4c4c4c;
     stroke: #eceded;
     margin-right: 8px;
+}
+
+@media screen and (min-width:768px) {
+    .how-its-made {
+        width: 768px;
+        margin-bottom: 80px;
+    }
+
+    .how-made-title {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
+
+    .how-made-img {
+        margin: 0 auto;
+        width: 614px;
+    }
+
+    .how-made-text {
+        margin: 0 auto;
+        padding: 32px;
+        margin-bottom: 80px;
+        width: 614px;
+    }
+
+    .how-made-text-title {
+        margin-bottom: 28px;
+    }
 }
 
 /* REVIEWS */
@@ -835,6 +930,49 @@ img {
     display: none;
 }
 
+@media screen and (min-width:768px) {
+    .reviews {
+        width: 768px;
+        margin-bottom: 80px;
+    }
+
+    .reviews-title {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 91px;
+    }
+
+    .reviews-list{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .reviews-info {
+        width: calc((100% - 16px)/2);
+        margin-bottom: 32px;
+    }
+
+    .reviews-banner {
+        margin-bottom: 50px;
+    }
+
+    .reviews-button {
+        padding: 14px 40px;
+        width: 222px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .hide-mob {
+        display: flex;
+    }
+
+    .hide-tab{
+        display: none;
+    }
+}
+
 /* FOOTER */
 
 .footer{
@@ -858,11 +996,12 @@ img {
 
 .footer-upper{
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 32px;
     margin-bottom: 32px;
 }
 
 .footer-address{
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
 }
 
 .footer-contact-us{
@@ -883,9 +1022,10 @@ img {
 }
 
 .footer-contacts-link{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
+    letter-spacing: -0.02em;
     text-align: center;
     color: #ffffff;
     font-style: normal;
@@ -922,7 +1062,7 @@ img {
 
 .footer-form{
     display: flex;
-    gap:8px;
+    gap: 8px;
 }
 
 .subs-email{
@@ -969,6 +1109,57 @@ img {
     color: #fd9222;
 }
 
+@media screen and (min-width:768px) {
+    .footer {
+        width: 768px;
+    }
+
+    .foot {
+        padding: 50px 32px;
+    }
+
+    .footer-upper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-title {
+        font-size: 28px;
+        line-height: 1.21;
+        margin-bottom: 0;
+    }
+
+    .footer-address {
+        margin-bottom: 0;
+    }
+
+    .footer-upper {
+        padding-bottom: 50px;
+        margin-bottom: 24px;
+    }
+
+    .footer-lower{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-nav-list {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 0;
+    }
+
+    .subs-email {
+        padding: 14px 24px;
+        width: 233px;
+    }
+    
+    .subs-button {
+        padding: 14px 28px;
+        width: 128px;
+    }
+}
 
 .hidden-mob{
     display: none;
@@ -1019,6 +1210,19 @@ img {
     stroke: #111111;
 }
 
+@media screen and (min-width:768px) {
+    .modal {
+        width: 517px;
+        padding: 40px;
+    }
+
+    .modal-close-btn {
+        top: 24px;
+        right: 24px;
+        height: 28px;
+    }
+}
+
 .modal-close-btn-icon{
     width: 24px;
     height: 24px;
@@ -1030,7 +1234,6 @@ img {
 }
 
 .modal-title {
-    width: 255px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -1142,9 +1345,9 @@ img {
 }
 
 .modal-checkbox-field {
-    margin-bottom: 32px;
     display: flex;
     align-items: center;
+    margin-bottom: 32px;
 }
 
 .check{
@@ -1203,4 +1406,80 @@ img {
 .send-btn:focus{
     background-color: #fcf1e0;
     color: #fd9222;
+}
+
+@media screen and (min-width:768px) {
+    .modal {
+        width: 517px;
+        padding: 40px;
+    }
+
+    .modal-close-btn {
+        top: 24px;
+        right: 24px;
+        height: 28px;
+    }
+
+    .modal-close-btn-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .modal-title {
+        width: 298px;
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 40px;
+    }
+
+    .modal-label-input {
+        gap: 8px;
+        margin-bottom: 18px;
+    }
+
+    .modal-label {
+        font-size: 14px;
+    }
+
+    .modal-field {
+        border-radius: 13px;
+        padding: 22px 24px;
+        padding-left: 62px;
+        width: 437px;
+        font-size: 18px;
+    }
+
+    .modal-icon {
+        left: 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .modal-label-textarea {
+        gap: 8px;
+    }
+
+    .modal-txt {
+        border-radius: 13px;
+        padding: 22px 24px;
+        width: 436px;
+        height: 137px;
+        font-size: 18px;
+    }
+
+    .modal-txt::placeholder {
+        font-size: 18px;
+    }
+
+    .modal-checkbox-field {
+        margin-bottom: 40px;
+    }
+
+    .modal-label-chkbox {
+        font-size: 14px;
+    }
+
+    .send-btn {
+        padding: 14px 40px;
+    }
 }
