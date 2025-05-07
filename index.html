@@ -207,6 +207,13 @@
                 <picture>
                   <source
                     srcset="
+                      ./images/ingredients/desktop/milk-choco-desc@1x.webp 1x,
+                      ./images/ingredients/desktop/milk-choco-desc@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
                       ./images/ingredients/mobile/milk-choco-mob@1x.webp 1x,
                       ./images/ingredients/mobile/milk-choco-mob@2x.webp 2x
                     "
@@ -240,6 +247,13 @@
             <li class="ingredients-item">
               <div class="ingredients-card">
                 <picture>
+                  <source
+                    srcset="
+                      ./images/ingredients/desktop/milk-bottle-desc@1x.webp 1x,
+                      ./images/ingredients/desktop/milk-bottle-desc@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
                   <source
                     srcset="
                       ./images/ingredients/mobile/milk-bottle-mob@1x.webp 1x,
@@ -276,6 +290,13 @@
                 <picture>
                   <source
                     srcset="
+                      ./images/ingredients/desktop/nuts-desc@1x.webp 1x,
+                      ./images/ingredients/desktop/nuts-desc@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
                       ./images/ingredients/mobile/nuts-mob@1x.webp 1x,
                       ./images/ingredients/mobile/nuts-mob@2x.webp 2x
                     "
@@ -308,6 +329,13 @@
             <li class="ingredients-item">
               <div class="ingredients-card">
                 <picture>
+                  <source
+                    srcset="
+                      ./images/ingredients/desktop/semi-sweet-choco-desc@1x.webp 1x,
+                      ./images/ingredients/desktop/semi-sweet-choco-desc@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
                   <source
                     srcset="
                       ./images/ingredients/mobile/semi-sweet-choco-mob@1x.webp 1x,
@@ -350,75 +378,77 @@
           <h2 class="how-made-title">
             how it's <span class="orange">made?</span>
           </h2>
-          <picture>
-            <source
-              srcset="
-                ./images/how-its-made/desktop/video@1x.webp 1x,
-                ./images/how-its-made/desktop/video@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                ./images/how-its-made/tablet/video@1x.webp 1x,
-                ./images/how-its-made/tablet/video@2x.webp 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/how-its-made/mobile/video@1x.webp 1x,
-                ./images/how-its-made/mobile/video@2x.webp 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              src="./images/how-its-made/mobile/video@1x.webp"
-              alt="Video how we made chocolate"
-              class="how-made-img"
-            />
-          </picture>
-          <div class="how-made-text">
-            <h3 class="how-made-text-title">
-              Try our chocolates today and discover the perfect balance of
-              flavor
-            </h3>
-            <ul class="how-made-list">
-              <li class="how-made-item">
-                <svg class="how-made-list-marker" width="8" height="8">
-                  <use href="./images/icons.svg#icon-marker"></use>
-                </svg>
-                Heat the milk in a saucepan without bringing it to a boil. Add
-                sugar and cocoa powder.
-              </li>
-              <li class="how-made-item">
-                <svg class="how-made-list-marker" width="8" height="8">
-                  <use href="./images/icons.svg#icon-marker"></use>
-                </svg>
-                At the same time, prepare a water bath. Melt the butter on it.
-              </li>
-              <li class="how-made-item">
-                <svg class="how-made-list-marker" width="8" height="8">
-                  <use href="./images/icons.svg#icon-marker"></use>
-                </svg>
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly
-                with a silicone spatula so that the mass becomes uniform and
-                silky.
-              </li>
-              <li class="how-made-item">
-                <svg class="how-made-list-marker" width="8" height="8">
-                  <use href="./images/icons.svg#icon-marker"></use>
-                </svg>
-                Heat the mixture over low heat, letting it barely boil.
-              </li>
-              <li class="how-made-item">
-                <svg class="how-made-list-marker" width="8" height="8">
-                  <use href="./images/icons.svg#icon-marker"></use>
-                </svg>
-                Pour the chocolate into special containers (can be replaced with
-                ice molds). Allow to cool and harden.
-              </li>
-            </ul>
+          <div class="how-made-content">
+            <picture>
+              <source
+                srcset="
+                  ./images/how-its-made/desktop/video@1x.webp 1x,
+                  ./images/how-its-made/desktop/video@2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/how-its-made/tablet/video@1x.webp 1x,
+                  ./images/how-its-made/tablet/video@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/how-its-made/mobile/video@1x.webp 1x,
+                  ./images/how-its-made/mobile/video@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/how-its-made/mobile/video@1x.webp"
+                alt="Video how we made chocolate"
+                class="how-made-img"
+              />
+            </picture>
+            <div class="how-made-text">
+              <h3 class="how-made-text-title">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="how-made-list">
+                <li class="how-made-item">
+                  <svg class="how-made-list-marker" width="8" height="8">
+                    <use href="./images/icons.svg#icon-marker"></use>
+                  </svg>
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="how-made-item">
+                  <svg class="how-made-list-marker" width="8" height="8">
+                    <use href="./images/icons.svg#icon-marker"></use>
+                  </svg>
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="how-made-item">
+                  <svg class="how-made-list-marker" width="8" height="8">
+                    <use href="./images/icons.svg#icon-marker"></use>
+                  </svg>
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="how-made-item">
+                  <svg class="how-made-list-marker" width="8" height="8">
+                    <use href="./images/icons.svg#icon-marker"></use>
+                  </svg>
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="how-made-item">
+                  <svg class="how-made-list-marker" width="8" height="8">
+                    <use href="./images/icons.svg#icon-marker"></use>
+                  </svg>
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
